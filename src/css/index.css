@@ -61,8 +61,8 @@ a {
 section {
   min-height: 100vh;
   padding: 67px 0;
-  border-bottom: #f0f2f7 solid 1px;
-  box-shadow: #f0f2f7 0 0 2px 4px;
+
+  border-bottom: #aaaaaa solid 1px;
 }
 
 .wrapper {

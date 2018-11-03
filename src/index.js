@@ -15,6 +15,7 @@ import { loadWeb3 } from './state/init/web3';
 // import { initContracts } from './state/init/contracts';
 import { startTipTimer } from './state/init/timer';
 
+import './css/Barrio.css';
 import './css/nunito.css';
 import './css/open-sans.css';
 import './css/index.css';

@@ -3,6 +3,7 @@ header {
   z-index: 1;
   width: 100%;
   background-color: #5a7832;
+
 }
 
 
@@ -20,7 +21,7 @@ header .title {
   line-height: 3em;
   font-size: 1.5em;
   font-weight: bold;
-  font-family: 'Nunito';
+  font-family: 'Barrio';
 }
 
 header ul {

@@ -41,7 +41,7 @@ class App extends Component {
                       );
                     }}
                   >
-                    Create Seeds
+                    Create
                   </a>
                 </li>
                 <li>
@@ -54,7 +54,7 @@ class App extends Component {
                       );
                     }}
                   >
-                    Shape
+                    Expirement
                   </a>
                 </li>
                 <li>
@@ -109,8 +109,10 @@ class App extends Component {
             <div className="wrapper">
               <div className="content-wrapper">
                 <h3>
-                  <span className="highlight-light">Community Garden</span> is a
-                  framework for building{' '}
+                  <span className="highlight-light barrio">
+                    Community Garden
+                  </span>{' '}
+                  is a framework for building{' '}
                   <span className="highlight-light">vibrant communities</span>
                 </h3>
               </div>
@@ -128,18 +130,19 @@ class App extends Component {
           <div className="wrapper">
             <h2>Create seeds</h2>
             <div className="row row-2">
-              <div className="content-wrapper">
+              <div>
                 <p>
-                  Seeds are the primary unit in Community Garden. Think of a
+                  Seeds are the primary unit in Community Garden. Every
+                  community has it's own unique type of seed. You can think of a
                   seed as a ticket, a member's badge, and an invitation – all at
                   the same time. But seeds are also more than that: every seed
                   contains [the power to create new communities]
                 </p>
 
                 <p>
-                  As your community interacts it produces new seeds that can be
-                  given or sold to new potential members. Design the rules for
-                  how your community's seeds will grow (participation,
+                  As your community members interact it will produce new seeds
+                  that can be given or sold to new potential members. Design the
+                  rules for how your community's seeds will grow (participation,
                   attendance, promotion, donations, etc).
                 </p>
                 <p>Create and distribute seeds to begin the process.</p>
@@ -166,7 +169,7 @@ class App extends Component {
                 <div className="iphone-background"> </div>
                 <img className="iphone" src={iphone} alt="" />
               </div>
-              <div className="content-wrapper">
+              <div>
                 <p>
                   You can adjust your incentives as you begin to understand your
                   community.
@@ -192,11 +195,11 @@ class App extends Component {
             <p>Release options:</p>
             <ul>
               <li>Open source</li>
-              <li>Community licensing agreement</li>
               <li>
                 Non-binding service model (eg, publishing infrastructure for
                 monthly fee)
               </li>
+              <li>Community licensing agreement</li>
               <li>Exclusive content model</li>
             </ul>
           </div>
@@ -210,7 +213,7 @@ class App extends Component {
         >
           <div className="wrapper">
             <h2>
-              <span className="highlight-light">Community Garden</span>
+              <span className="highlight-light barrio">Community Garden</span>
             </h2>
             <div className="row row-2">
               <div>
@@ -248,8 +251,9 @@ class App extends Component {
           </div>
         </section>
 
-        <div className="wrapper">
-          <footer>
+        {/* Footer */}
+        <footer>
+          <div className="wrapper footer-grid">
             <div>
               <h4>About this project</h4>
               <p>
@@ -266,8 +270,8 @@ class App extends Component {
               <p>@mattlovan</p>
               <p>mattlovan@gmail.com</p>
             </div>
-          </footer>
-        </div>
+          </div>
+        </footer>
       </div>
     );
   }
