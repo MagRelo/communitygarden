@@ -4,11 +4,10 @@ import { connect } from 'react-redux';
 import scrollToComponent from 'react-scroll-to-component';
 
 import ProfilePic from './images/profile.jpg';
-import Phone from './images/phone.png';
+import iphone from './images/phone.png';
 
-import Controller from './controller/Controller';
-
-import './App.css';
+import './css/header.css';
+import './css/App.css';
 
 const scrollOptions = {
   duration: 700,
@@ -29,12 +28,12 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <div className="wrapper">
+          <div className="header-wrapper">
             <nav>
               <ul>
                 <li>
                   <a
-                    href="/#tokenize"
+                    href="/#seed"
                     onClick={() => {
                       scrollToComponent(
                         this.tokenize,
@@ -42,12 +41,12 @@ class App extends Component {
                       );
                     }}
                   >
-                    Inputs
+                    Create Seeds
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/#distribute"
+                    href="/#grow"
                     onClick={() => {
                       scrollToComponent(
                         this.distribute,
@@ -55,12 +54,12 @@ class App extends Component {
                       );
                     }}
                   >
-                    Distribute
+                    Shape
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/#contribute"
+                    href="/#release"
                     onClick={() => {
                       scrollToComponent(
                         this.contribute,
@@ -68,33 +67,20 @@ class App extends Component {
                       );
                     }}
                   >
-                    Assemble
+                    Release
                   </a>
                 </li>
                 <li>
                   <a
-                    href="/#create"
+                    href="/#about"
                     onClick={() => {
                       scrollToComponent(
-                        this.create,
+                        this.about,
                         Object.assign(scrollOptions, { offset: 0 })
                       );
                     }}
                   >
-                    Create
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/#forge"
-                    onClick={() => {
-                      scrollToComponent(
-                        this.forge,
-                        Object.assign(scrollOptions, { offset: 0 })
-                      );
-                    }}
-                  >
-                    Forge
+                    About
                   </a>
                 </li>
               </ul>
@@ -106,7 +92,7 @@ class App extends Component {
                     scrollToComponent(this.home, scrollOptions);
                   }}
                 >
-                  <span className="title">moment</span>
+                  <span className="title">Community Garden</span>
                 </a>
               </div>
             </nav>
@@ -119,181 +105,144 @@ class App extends Component {
             this.home = section;
           }}
         >
-          <div className="wrapper">
-            <h3>
-              A framework for creating{' '}
-              <span className="highlight-light">meaningful</span> digital
-              experiences by leveraging{' '}
-              <span className="highlight-light">authentic</span> scarcity
-            </h3>
-            <div className="row row-2">
-              <div>
-                <h2>authentic scarcity:</h2>
-                <ul>
-                  <li>moments in time</li>
-                  <li>positive energy</li>
-                  <li>new relationships</li>
-                  <li>generosity</li>
-                  <li>honesty</li>
-                </ul>
+          <div className="hero-box">
+            <div className="wrapper">
+              <div className="content-wrapper">
+                <h3>
+                  <span className="highlight-light">Community Garden</span> is a
+                  framework for building{' '}
+                  <span className="highlight-light">vibrant communities</span>
+                </h3>
               </div>
             </div>
-            <h2>
-              with moment, it's never the same without you – your presence
-              contributes to the final product.
-            </h2>
           </div>
         </section>
 
         <section
           className="grey"
-          id="tokenize"
+          id="seed"
           ref={section => {
             this.tokenize = section;
           }}
         >
           <div className="wrapper">
-            <h2>Create your inputs</h2>
-            <p>(ERC 998, 712) </p>
+            <h2>Create seeds</h2>
+            <div className="row row-2">
+              <div className="content-wrapper">
+                <p>
+                  Seeds are the primary unit in Community Garden. Think of a
+                  seed as a ticket, a member's badge, and an invitation – all at
+                  the same time. But seeds are also more than that: every seed
+                  contains [the power to create new communities]
+                </p>
 
-            <div className="text-center">
-              <label className="upper">Case Studies</label>
-            </div>
-
-            <div className="row row-3 text-center">
-              <div>
-                <h4>Painting</h4>
-                <p>pantone colors</p>
+                <p>
+                  As your community interacts it produces new seeds that can be
+                  given or sold to new potential members. Design the rules for
+                  how your community's seeds will grow (participation,
+                  attendance, promotion, donations, etc).
+                </p>
+                <p>Create and distribute seeds to begin the process.</p>
               </div>
-              <div>
-                <h4>Music</h4>
-                <p>audio samples</p>
-              </div>
-              <div>
-                <h4>Improv</h4>
-                <p>characters</p>
+              <div className="text-center">
+                <div className="iphone-background"> </div>
+                <img className="iphone" src={iphone} alt="" />
               </div>
             </div>
           </div>
         </section>
         <section
-          id="distribute"
+          id="grow"
           ref={section => {
             this.distribute = section;
           }}
         >
           <div className="wrapper">
-            <h2>distribute your tokens</h2>
-            <p>use any means neccesary (bouncer, scavenger hunt) </p>
-            <div>
-              <div>
-                <p>send</p>
+            <h2 style={{ textAlign: 'right' }}>
+              Shape your community as it grows
+            </h2>
+            <div className="row row-2">
+              <div className="text-center">
+                <div className="iphone-background"> </div>
+                <img className="iphone" src={iphone} alt="" />
               </div>
-              <div>
-                <p>scavenger hunt</p>
-              </div>
-              <div>
-                <p>sell</p>
+              <div className="content-wrapper">
+                <p>
+                  You can adjust your incentives as you begin to understand your
+                  community.
+                </p>
+                <p> Establish norms and values as your community grows.</p>
               </div>
             </div>
           </div>
         </section>
+
         <section
-          id="assemble"
-          className="grey"
+          id="release"
           ref={section => {
             this.contribute = section;
           }}
         >
           <div className="wrapper">
-            <h2>contribute</h2>
-            <p>(race to contribute - merkle?)</p>
-          </div>
-        </section>
-        <section
-          id="create"
-          ref={section => {
-            this.create = section;
-          }}
-        >
-          <div className="wrapper">
-            <h2>create (interactive midi)</h2>
-
-            <div className="text-center">
-              <label className="upper">Case Studies</label>
-            </div>
-            <div className="row row-3 text-center">
-              <div>
-                <h4>Painting</h4>
-                <p>pantone colors</p>
-              </div>
-              <div>
-                <h4>Music</h4>
-                <p>audio samples</p>
-                <Controller />
-              </div>
-              <div>
-                <h4>Improv</h4>
-                <p>characters</p>
-              </div>
-            </div>
+            <h2>Release into the world</h2>
+            <p>
+              When it’s ready, lock in your incentives and release it into the
+              world.
+            </p>
+            <p>Release options:</p>
+            <ul>
+              <li>Open source</li>
+              <li>Community licensing agreement</li>
+              <li>
+                Non-binding service model (eg, publishing infrastructure for
+                monthly fee)
+              </li>
+              <li>Exclusive content model</li>
+            </ul>
           </div>
         </section>
 
-        {/* FORGE */}
         <section
-          id="forge"
-          className="grey"
+          id="about"
           ref={section => {
-            this.forge = section;
+            this.about = section;
           }}
         >
           <div className="wrapper">
-            <div
-              style={{
-                display: 'grid',
-                gridTemplateRows: 'auto 1fr',
-                gridTemplateColumns: '3fr 2fr'
-              }}
-            >
-              <div
-                style={{
-                  gridColumnStart: 1,
-                  gridColumnEnd: 1,
-                  gridRowStart: 1,
-                  gridRowEnd: 2
-                }}
-              >
-                <h2>forge an authentic artifact</h2>
+            <h2>
+              <span className="highlight-light">Community Garden</span>
+            </h2>
+            <div className="row row-2">
+              <div>
+                <h4>About Us</h4>
+                <p>Matt Lovan: self-proclaimed Olympic gold-medalist</p>
               </div>
-              <div
-                style={{
-                  gridColumnStart: 1,
-                  gridColumnEnd: 1,
-                  gridRowStart: 2,
-                  gridRowEnd: 3
-                }}
-              >
-                <h3>More than the sum of its parts</h3>
-                <p>The performance is now </p>
-                <h3>exactly as rare as it should be</h3>
-                <p>make 1 or 10 or 10,000 – expirement with scarcity</p>
-                <h3>innovate with ownership</h3>
-                <p>make 1 or 10 or 10,000 – expirement with scarcity</p>
-              </div>
+              <div className="reading">
+                <h4>Inspiration and Readings</h4>
+                <ul>
+                  <li className="clear">
+                    <a href="https://medium.com/humanizing-the-singularity/part-i-are-you-sure-you-exist-we-are-5cfe13ab488c">
+                      Tell Me Who You Are
+                    </a>
+                    <span> by Vinay Gupta</span>
+                  </li>
 
-              <div
-                style={{
-                  gridColumnStart: 2,
-                  gridColumnEnd: 2,
-                  gridRowStart: 1,
-                  gridRowEnd: 3,
-                  textAlign: 'center'
-                }}
-              >
-                <h3>moment App</h3>
-                <img className="iphone" src={Phone} alt="iphone" />
-                <p>coming soon</p>
+                  <li className="clear">
+                    <a href="https://medium.com/what-to-build/how-to-design-social-systems-without-causing-depression-and-war-3c3f8e0226d1">
+                      How to Design Social Systems (Without Causing Depression
+                      and War)
+                    </a>
+                    <span> by Joe Edelman</span>
+                  </li>
+
+                  <li className="clear">
+                    <a href="https://wtf.tw/ref/ostrom_1990.pdf">
+                      Governing the Commons: The Evolution of Institutions for
+                      Collective Action (PDF)
+                    </a>
+                    <span> by Elinor Olstrom</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

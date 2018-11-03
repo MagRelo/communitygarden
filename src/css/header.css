@@ -1,0 +1,75 @@
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: #5a7832;
+}
+
+
+.header-wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 1em;
+  background-color: #5a7832
+}
+
+
+header .title {
+  margin: 0.2em 0 0 0;
+  color: #f0f2f7;
+  line-height: 3em;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Nunito';
+}
+
+header ul {
+  float: right;
+  margin-bottom: 0;
+
+  display: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin-bottom: 1em;
+  margin-left: 1em;
+
+  font-size: small;
+  font-weight: bold;
+  line-height: 3em;
+
+}
+
+header ul li:nth-child(1) :after,
+header ul li:nth-child(2) :after,
+header ul li:nth-child(3) :after {
+  content: "▶";
+  margin: 1em 0 0 1em;
+  color: #f0f2f7;
+}
+
+header ul li:nth-last-child(2) :after {
+  content: "|";
+}
+
+
+
+header a {
+  text-decoration: none;
+}
+
+header nav li a {
+  color: #f0f2f7;
+  text-decoration: none;
+}
+
+
+
+
+
+@media screen and (min-width: 1040px) {
+  header nav ul {
+    display: block;
+  }
+}

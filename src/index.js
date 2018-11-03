@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -18,6 +17,7 @@ import { startTipTimer } from './state/init/timer';
 
 import './css/nunito.css';
 import './css/open-sans.css';
+import './css/index.css';
 
 // load data
 async function init() {

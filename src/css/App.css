@@ -1,0 +1,117 @@
+#home {
+  background-image: url('../images/garden.png');
+  background-position-x: left;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#seed,
+#release {
+  background-image: url('../images/hangingplants.png');
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 500px;
+}
+
+#grow {
+  background-image: url('../images/hangingplants.png');
+  background-position-x: left;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 500px;
+
+}
+
+
+.highlight-light {
+  color: #92C456;
+}
+
+.info-box {
+  /* background: white;
+  box-shadow: #ddd 0 0 2px 4px; */
+  border: solid 1px #aaaaaa;
+}
+
+.grey {
+  background-color: #f0f2f7;
+  /* color: #f0f2f7; */
+}
+
+.hero-box {
+  margin-bottom: 33vh;
+}
+
+.content-wrapper {
+  background-color: #f0f2f7;
+  box-shadow: #f0f2f7 0 0 2px 2px;
+  /* padding: 1em; */
+
+}
+
+.iphone {
+  max-height: 50vh;
+  border-radius: 30px;
+
+  background-image: url('../images/hangingplants.png');
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #f0f2f7;
+}
+
+
+.reading ul {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.reading li {
+  margin-bottom: 1em;
+}
+
+.reading li a {
+  font-size: 1.25em;
+  /* display: block; */
+}
+
+.reading li span {
+  padding-left: 0.25em;
+}
+
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 4em;
+
+  padding: 3em 0;
+
+  /* 
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: bold; */
+}
+
+footer h4 {
+  margin-top: 0;
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+  .row-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .row-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
