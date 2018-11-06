@@ -54,7 +54,7 @@ class App extends Component {
                       );
                     }}
                   >
-                    Expirement
+                    Experiment
                   </a>
                 </li>
                 <li>
@@ -113,7 +113,7 @@ class App extends Component {
                     Community Garden
                   </span>{' '}
                   is a framework for building{' '}
-                  <span className="highlight-light">vibrant communities</span>
+                  <span className="highlight-light">strong communities</span>
                 </h3>
               </div>
             </div>
@@ -133,7 +133,7 @@ class App extends Component {
               <div>
                 <p>
                   Seeds are the primary unit in Community Garden. Every
-                  community has it's own unique type of seed. You can think of a
+                  community has its own unique type of seed. You can think of a
                   seed as a ticket, a member's badge, and an invitation – all at
                   the same time. But seeds are also more than that: every seed
                   contains [the power to create new communities]
@@ -217,19 +217,30 @@ class App extends Component {
             </h2>
             <div className="row row-2">
               <div>
+                <h4>Our Philosophy</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente unde incidunt quae repellendus, eius, odio ratione
+                  ipsa eum mollitia labore alias iusto veniam beatae harum illum
+                  eos quaerat minus praesentium.
+                </p>
+              </div>
+              <div>
+                <h4>Roadmap</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente unde incidunt quae repellendus, eius, odio ratione
+                  ipsa eum mollitia labore alias iusto veniam beatae harum illum
+                  eos quaerat minus praesentium.
+                </p>
+              </div>
+              <div>
                 <h4>About Us</h4>
                 <p>Matt Lovan: self-proclaimed Olympic gold-medalist</p>
               </div>
               <div className="reading">
                 <h4>Inspiration and Readings</h4>
                 <ul>
-                  <li className="clear">
-                    <a href="https://medium.com/humanizing-the-singularity/part-i-are-you-sure-you-exist-we-are-5cfe13ab488c">
-                      Tell Me Who You Are
-                    </a>
-                    <span> by Vinay Gupta</span>
-                  </li>
-
                   <li className="clear">
                     <a href="https://medium.com/what-to-build/how-to-design-social-systems-without-causing-depression-and-war-3c3f8e0226d1">
                       How to Design Social Systems (Without Causing Depression
@@ -244,6 +255,13 @@ class App extends Component {
                       Collective Action (PDF)
                     </a>
                     <span> by Elinor Olstrom</span>
+                  </li>
+
+                  <li className="clear">
+                    <a href="https://medium.com/humanizing-the-singularity/part-i-are-you-sure-you-exist-we-are-5cfe13ab488c">
+                      Tell Me Who You Are
+                    </a>
+                    <span> by Vinay Gupta</span>
                   </li>
                 </ul>
               </div>
