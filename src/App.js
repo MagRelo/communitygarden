@@ -58,7 +58,7 @@ class App extends Component {
                   </a>
                 </li>
                 <li>
-                  <a
+                <a
                     href="/#release"
                     onClick={() => {
                       scrollToComponent(
