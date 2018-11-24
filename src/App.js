@@ -58,7 +58,7 @@ class App extends Component {
                   </a>
                 </li>
                 <li>
-                <a
+                  <a
                     href="/#release"
                     onClick={() => {
                       scrollToComponent(
@@ -217,27 +217,30 @@ class App extends Component {
             </h2>
             <div className="row row-2">
               <div>
-                <h4>Our Philosophy</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Sapiente unde incidunt quae repellendus, eius, odio ratione
-                  ipsa eum mollitia labore alias iusto veniam beatae harum illum
-                  eos quaerat minus praesentium.
-                </p>
+                <div>
+                  <h4>Our Philosophy</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente unde incidunt quae repellendus, eius, odio ratione
+                    ipsa eum mollitia labore alias iusto veniam beatae harum
+                    illum eos quaerat minus praesentium.
+                  </p>
+                </div>
+                <div>
+                  <h4>Roadmap</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Sapiente unde incidunt quae repellendus, eius, odio ratione
+                    ipsa eum mollitia labore alias iusto veniam beatae harum
+                    illum eos quaerat minus praesentium.
+                  </p>
+                </div>
+                <div>
+                  <h4>About Us</h4>
+                  <p>Matt Lovan: self-proclaimed Olympic gold-medalist</p>
+                </div>
               </div>
-              <div>
-                <h4>Roadmap</h4>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Sapiente unde incidunt quae repellendus, eius, odio ratione
-                  ipsa eum mollitia labore alias iusto veniam beatae harum illum
-                  eos quaerat minus praesentium.
-                </p>
-              </div>
-              <div>
-                <h4>About Us</h4>
-                <p>Matt Lovan: self-proclaimed Olympic gold-medalist</p>
-              </div>
+
               <div className="reading">
                 <h4>Inspiration and Readings</h4>
                 <ul>
@@ -275,8 +278,8 @@ class App extends Component {
             <div>
               <h4>About this project</h4>
               <p>
-                This project is an expirement in using participation and
-                responsibility to create meaning.
+                This project is an expiriment in using behavioral psychology and
+                mechanism design to build strong communities.
               </p>
             </div>
             <div>
@@ -296,9 +299,7 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
-  return {
-    samples: state.controller.samples
-  };
+  return {};
 };
 
 const mapDispatchToProps = dispatch => {

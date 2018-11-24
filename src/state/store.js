@@ -4,11 +4,9 @@ import thunkMiddleware from 'redux-thunk';
 import { combineReducers } from 'redux';
 
 import web3 from './reducers/web3';
-import controller from './reducers/controller';
 
 const reducer = combineReducers({
-  web3: web3,
-  controller: controller
+  web3: web3
 });
 
 // Redux DevTools
